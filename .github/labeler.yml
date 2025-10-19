@@ -1,0 +1,61 @@
+# Configuration for auto-labeling PRs
+# This file is used by the labeler action in pr-checks.yml
+
+'dependencies':
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'package.json'
+      - 'package-lock.json'
+      - 'yarn.lock'
+      - 'pnpm-lock.yaml'
+
+'documentation':
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/**/*'
+      - '*.md'
+      - 'README.md'
+      - 'CHANGELOG.md'
+
+'typescript':
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/**/*.ts'
+      - 'src/**/*.tsx'
+      - 'tsconfig.json'
+
+'configuration':
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/**/*'
+      - '*.config.js'
+      - '*.config.ts'
+      - 'wrangler.toml'
+      - '.eslintrc.*'
+      - '.prettierrc'
+
+'tests':
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/**/*.test.ts'
+      - 'src/**/*.spec.ts'
+      - 'src/**/*.test.tsx'
+      - 'src/**/*.spec.tsx'
+      - '**/vitest.config.ts'
+
+'examples':
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'examples/**/*'
+
+'ci/cd':
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**'
+
+'build':
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'vite.config.ts'
+      - 'tsconfig.json'
+      - 'wrangler.toml'
