@@ -1,7 +1,7 @@
 /**
  * x402.dev Payment Rails SDK
- * Main SDK export file
+ * Main entry point
  */
 
-export * from './client';
+export { X402Client } from './client';
 export * from './types';
