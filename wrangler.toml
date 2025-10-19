@@ -1,0 +1,22 @@
+name = "x402-dev"
+main = "src/worker/index.ts"
+compatibility_date = "2024-01-01"
+
+# Bindings
+[vars]
+ENVIRONMENT = "development"
+
+# KV Namespaces (uncomment when needed)
+# [[kv_namespaces]]
+# binding = "X402_KV"
+# id = "your-kv-namespace-id"
+
+# Durable Objects (uncomment when needed)
+# [[durable_objects.bindings]]
+# name = "X402_DO"
+# class_name = "X402DurableObject"
+
+# R2 Buckets (uncomment when needed)
+# [[r2_buckets]]
+# binding = "X402_BUCKET"
+# bucket_name = "x402-storage"
