@@ -1,0 +1,36 @@
+# Configuration for auto-labeling PRs
+# This file is referenced by the pr-checks.yml workflow
+
+'dependencies':
+  - 'package.json'
+  - 'package-lock.json'
+  - 'yarn.lock'
+  - 'pnpm-lock.yaml'
+
+'documentation':
+  - 'docs/**/*'
+  - '*.md'
+  - 'README.md'
+  - 'CHANGELOG.md'
+
+'typescript':
+  - 'src/**/*.ts'
+  - 'src/**/*.tsx'
+  - 'tsconfig.json'
+
+'configuration':
+  - '.github/**/*'
+  - '*.config.js'
+  - '*.config.ts'
+  - 'wrangler.toml'
+  - '.eslintrc.*'
+  - '.prettierrc'
+
+'tests':
+  - 'src/**/*.test.ts'
+  - 'src/**/*.spec.ts'
+  - 'src/**/*.test.tsx'
+  - 'src/**/*.spec.tsx'
+
+'examples':
+  - 'examples/**/*'
